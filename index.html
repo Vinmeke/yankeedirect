@@ -10,7 +10,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
         body { font-family: 'Inter', sans-serif; background-color: #0a0a0c; color: white; scroll-behavior: smooth; }
         .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.08); }
-        .btn-glow:hover { box-shadow: 0 0 30px rgba(255, 255, 255, 0.2); transform: scale(1.05); }
+        .btn-glow:hover { box-shadow: 0 0 30px rgba(59, 130, 246, 0.3); transform: scale(1.05); }
         .iphone-card:hover { border-color: #3b82f6; transform: translateY(-10px); }
     </style>
 </head>
@@ -20,8 +20,8 @@
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-3xl font-black tracking-tighter text-white uppercase italic">Yankee <span class="text-blue-500 not-italic">Direct</span></h1>
             <div class="flex items-center space-x-6">
-                <a href="#about" class="text-sm font-bold text-gray-400 hover:text-white transition">About</a>
-                <a href="https://wa.me/2348065651034" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full text-xs font-black transition">WhatsApp</a>
+                <a href="#about" class="text-sm font-bold text-gray-400 hover:text-white transition">The Advantage</a>
+                <a href="https://wa.me/2348065651034" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full text-xs font-black transition">WhatsApp Us</a>
             </div>
         </div>
     </nav>
@@ -31,29 +31,48 @@
         <div class="container mx-auto relative z-10">
             <div class="inline-flex items-center space-x-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full mb-10">
                 <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                <span class="text-[10px] font-black tracking-widest uppercase text-gray-300">Now Shipping to Lagos & Abuja</span>
+                <span class="text-[10px] font-black tracking-widest uppercase text-gray-300">Dispatching to Lagos & Abuja Today</span>
             </div>
-            <h2 class="text-6xl md:text-9xl font-black mb-8 tracking-tighter leading-none">Quality iPhone <br><span class="text-blue-500">you can trust.</span></h2>
+            <h2 class="text-6xl md:text-9xl font-black mb-8 tracking-tighter leading-none uppercase">Quality iPhone <br><span class="text-blue-500">you can trust.</span></h2>
             <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-12 font-light leading-relaxed">
-                Direct US imports sourced from telecom operators. No middlemen. No scams. All payments in Naira.
+                Direct US imports sourced from telecom auctions. No local repairs. No middleman markups.
             </p>
             <a href="#inventory" class="inline-block bg-white text-black px-12 py-5 rounded-2xl font-black text-lg btn-glow transition-all">
-                Shop Current Stock
+                Shop Available Stock
             </a>
         </div>
     </header>
 
-    <section id="about" class="py-24 px-6 border-y border-white/5">
-        <div class="container mx-auto max-w-5xl">
-            <h3 class="text-3xl font-black italic underline decoration-blue-600 underline-offset-8 mb-12 text-center md:text-left tracking-tighter uppercase">The Yankee Direct Advantage</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                <p class="text-gray-400 text-lg leading-relaxed">
-                    We eliminate international transaction risks and dollar rate fluctuations. By shipping directly from US telecom auctions to our hubs in Nigeria, we offer retailers and individuals 100% authentic devices without the "Computer Village" headache.
-                </p>
-                <div class="glass p-10 rounded-[40px] text-center">
-                    <i class="fas fa-microchip text-6xl text-blue-600 mb-6"></i>
-                    <h4 class="text-2xl font-bold mb-4">Certified Pre-Owned</h4>
-                    <p class="text-gray-500 text-sm">Every device undergoes a 40-point diagnostic check before leaving the US. Never opened or repaired locally.</p>
+    <section id="about" class="py-24 px-6 border-y border-white/5 bg-white/[0.01]">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-20">
+                <h3 class="text-4xl md:text-6xl font-black italic tracking-tighter uppercase mb-4">Why Buy <span class="text-blue-500">Direct?</span></h3>
+                <p class="text-gray-500 max-w-xl mx-auto">We've simplified the process of owning a premium US iPhone by removing the risks associated with local markets.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass p-10 rounded-[40px] border-l-4 border-l-blue-500">
+                    <div class="w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center mb-6 text-blue-500 text-2xl">
+                        <i class="fas fa-plane-arrival"></i>
+                    </div>
+                    <h4 class="text-xl font-black mb-4">US Source Only</h4>
+                    <p class="text-sm text-gray-400 leading-relaxed">We source directly from US telecom auctions. Every phone is a "US Spec" device, guaranteed to have never been opened, repaired, or tampered with in Nigeria.</p>
+                </div>
+
+                <div class="glass p-10 rounded-[40px] border-l-4 border-l-blue-500">
+                    <div class="w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center mb-6 text-blue-500 text-2xl">
+                        <i class="fas fa-naira-sign"></i>
+                    </div>
+                    <h4 class="text-xl font-black mb-4">Naira Pricing</h4>
+                    <p class="text-sm text-gray-400 leading-relaxed">Forget black market dollar rates. Our prices are fixed in Naira, allowing you to pay locally and avoid the stress of international transaction limits.</p>
+                </div>
+
+                <div class="glass p-10 rounded-[40px] border-l-4 border-l-blue-500">
+                    <div class="w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center mb-6 text-blue-500 text-2xl">
+                        <i class="fas fa-shield-check"></i>
+                    </div>
+                    <h4 class="text-xl font-black mb-4">The Trust Bridge</h4>
+                    <p class="text-sm text-gray-400 leading-relaxed">We handle the logistics and the risk. You get a certified device delivered to your door in Lagos or Abuja with a 100% authenticity guarantee.</p>
                 </div>
             </div>
         </div>
@@ -61,15 +80,14 @@
 
     <section id="inventory" class="py-32 px-6">
         <div class="container mx-auto">
-            <h3 class="text-4xl font-black tracking-tight uppercase mb-20 text-center">Available Stock</h3>
+            <h3 class="text-4xl font-black tracking-tight uppercase mb-20 text-center">Current Inventory</h3>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                
                 <div class="iphone-card glass rounded-[40px] p-8 transition-all duration-500 border border-transparent">
                     <div class="flex justify-between items-start mb-16"><span class="text-[10px] font-black bg-blue-600 px-3 py-1 rounded-full uppercase tracking-widest">Pristine</span><i class="fab fa-apple text-3xl text-white/10"></i></div>
                     <h4 class="text-2xl font-bold mb-8">iPhone 15 Pro Max</h4>
                     <div class="flex justify-between items-end">
                         <p class="text-3xl font-black">₦1,450,000</p>
-                        <a href="https://wa.me/2348065651034" class="w-14 h-14 bg-white text-black rounded-2xl flex items-center justify-center hover:bg-blue-600 hover:text-white transition"><i class="fab fa-whatsapp text-2xl"></i></a>
+                        <a href="https://wa.me/2348065651034" class="w-14 h-14 bg-white text-black rounded-2xl flex items-center justify-center hover:bg-blue-600 hover:text-white transition transform group-hover:scale-110"><i class="fab fa-whatsapp text-2xl"></i></a>
                     </div>
                 </div>
 
@@ -78,7 +96,7 @@
                     <h4 class="text-2xl font-bold mb-8">iPhone 14 Pro</h4>
                     <div class="flex justify-between items-end">
                         <p class="text-3xl font-black">₦950,000</p>
-                        <a href="https://wa.me/2348065651034" class="w-14 h-14 bg-white text-black rounded-2xl flex items-center justify-center hover:bg-blue-600 hover:text-white transition"><i class="fab fa-whatsapp text-2xl"></i></a>
+                        <a href="https://wa.me/2348065651034" class="w-14 h-14 bg-white text-black rounded-2xl flex items-center justify-center hover:bg-blue-600 hover:text-white transition transform group-hover:scale-110"><i class="fab fa-whatsapp text-2xl"></i></a>
                     </div>
                 </div>
 
@@ -87,28 +105,26 @@
                     <h4 class="text-2xl font-bold mb-8">iPhone 13</h4>
                     <div class="flex justify-between items-end">
                         <p class="text-3xl font-black">₦450,000</p>
-                        <a href="https://wa.me/2348065651034" class="w-14 h-14 bg-white text-black rounded-2xl flex items-center justify-center hover:bg-blue-600 hover:text-white transition"><i class="fab fa-whatsapp text-2xl"></i></a>
+                        <a href="https://wa.me/2348065651034" class="w-14 h-14 bg-white text-black rounded-2xl flex items-center justify-center hover:bg-blue-600 hover:text-white transition transform group-hover:scale-110"><i class="fab fa-whatsapp text-2xl"></i></a>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <section class="py-20 px-6 bg-white/[0.02]">
+    <section class="py-20 px-6">
         <div class="container mx-auto text-center border-t border-white/5 pt-20">
-            <h4 class="text-2xl font-bold mb-4 tracking-tight uppercase">Are you a Retailer?</h4>
-            <p class="text-gray-500 mb-8 max-w-lg mx-auto text-sm">We provide high-volume sourcing for businesses across Nigeria. Request your retailer price list today.</p>
-            <a href="https://wa.me/2348065651034?text=Hi%20Yankee%20Direct,%20I%20am%20a%20retailer%20interested%20in%20bulk%20iPhone%20stock." class="inline-block border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-10 py-4 rounded-2xl font-bold transition uppercase tracking-widest text-xs">Request Stock Quotes</a>
+            <h4 class="text-2xl font-bold mb-4 tracking-tight uppercase italic">Are you a Retailer?</h4>
+            <p class="text-gray-500 mb-8 max-w-lg mx-auto text-sm">We provide wholesale sourcing directly from US auctions for businesses in Nigeria. Skip the middlemen and secure your inventory.</p>
+            <a href="https://wa.me/2348065651034?text=Hi%20Yankee%20Direct,%20I%20am%20a%20retailer%20interested%20in%20bulk%20iPhone%20stock." class="inline-block border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-10 py-4 rounded-2xl font-bold transition uppercase tracking-widest text-xs">Request Retailer Prices</a>
         </div>
     </section>
 
     <footer class="py-20 px-6 text-center text-gray-600">
         <h2 class="text-4xl font-black italic uppercase mb-8 text-white">Yankee <span class="text-blue-500 not-italic">Direct</span></h2>
         <div class="flex justify-center space-x-10 mb-10 font-bold tracking-widest uppercase text-[10px]">
-            <a href="https://wa.me/2348065651034" class="hover:text-white">Contact</a>
-            <a href="#" class="hover:text-white">Instagram</a>
-            <a href="#" class="hover:text-white">TikTok</a>
+            <a href="https://wa.me/2348065651034" class="hover:text-white transition">Contact: 0806 565 1034</a>
+            <a href="#" class="hover:text-white transition">Instagram</a>
         </div>
         <p class="text-[10px] tracking-[0.4em] uppercase">Lagos Office • Abuja Dispatch • 2026</p>
     </footer>
