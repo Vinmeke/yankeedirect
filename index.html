@@ -12,7 +12,6 @@
         .glass-nav { background: rgba(10, 10, 12, 0.85); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
         .hero-gradient { background: radial-gradient(circle at top, rgba(59, 130, 246, 0.18) 0%, transparent 70%); }
         .card-glow:hover { box-shadow: 0 0 40px rgba(59, 130, 246, 0.2); border-color: rgba(59, 130, 246, 0.5); transform: translateY(-5px); }
-        input { background: rgba(255, 255, 255, 0.05) !important; border: 1px solid rgba(255, 255, 255, 0.1) !important; color: white !important; }
     </style>
 </head>
 <body class="bg-[#08080a] text-white">
@@ -21,8 +20,7 @@
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-3xl md:text-5xl font-black tracking-tighter italic uppercase">Yankee <span class="text-blue-500 not-italic">Direct</span></h1>
             <div class="flex items-center space-x-6">
-                <a href="#inventory" class="text-xs font-bold tracking-widest text-gray-400 hover:text-white transition uppercase hidden md:block">Stock</a>
-                <a href="https://wa.me/2348065651034" class="bg-blue-600 text-white px-6 py-3 rounded-full text-xs font-black transition uppercase tracking-widest">Chat Sales</a>
+                <a href="https://wa.me/2348065651034" class="bg-blue-600 text-white px-6 py-3 rounded-full text-xs font-black transition uppercase tracking-widest shadow-lg">Chat Sales</a>
             </div>
         </div>
     </nav>
@@ -34,81 +32,66 @@
                 <span class="text-[10px] font-black tracking-[0.2em] uppercase text-blue-400">Direct US Imports • Dispatching Daily</span>
             </div>
             <h2 class="text-5xl md:text-8xl font-extrabold mb-8 tracking-tighter leading-tight">Quality iPhone <br><span class="text-blue-500">you can trust.</span></h2>
-            <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-10 font-light">Sourced directly from US Telecom Operators. 100% Naira Transactions.</p>
-            <a href="#inventory" class="bg-white text-black px-12 py-5 rounded-2xl font-bold text-lg hover:bg-blue-600 hover:text-white transition shadow-2xl">Browse Current Stock</a>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-12 font-light">Sourced directly from US Telecom Operators. 100% Naira Transactions.</p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="#inventory" class="bg-white text-black px-12 py-5 rounded-2xl font-bold text-lg hover:bg-blue-600 hover:text-white transition shadow-2xl">Browse Current Stock</a>
+            </div>
         </div>
     </header>
 
     <section id="inventory" class="py-24 px-6">
         <div class="container mx-auto">
-            <h3 class="text-4xl font-black tracking-tight uppercase mb-16">Live Availability</h3>
+            <h3 class="text-4xl font-black tracking-tight uppercase mb-16 text-center md:text-left">Live Availability</h3>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
                 <div class="group bg-[#121214] border border-white/5 rounded-[40px] p-8 card-glow transition-all">
-                    <div class="flex justify-between items-start mb-12"><span class="text-[10px] font-black bg-blue-600 px-3 py-1 rounded-full uppercase">Pristine</span><i class="fab fa-apple text-3xl text-white/5"></i></div>
+                    <div class="flex justify-between items-start mb-12"><span class="text-[10px] font-black bg-blue-600 px-3 py-1 rounded-full uppercase tracking-widest">Pristine</span><i class="fab fa-apple text-3xl text-white/5 group-hover:text-blue-500 transition"></i></div>
                     <h4 class="text-2xl font-bold mb-8">iPhone 15 Pro Max</h4>
                     <div class="flex justify-between items-end">
                         <p class="text-3xl font-black">₦1,450,000</p>
-                        <a href="https://wa.me/2348065651034" class="w-14 h-14 bg-white text-black rounded-2xl flex items-center justify-center hover:bg-blue-600 hover:text-white transition"><i class="fab fa-whatsapp text-2xl"></i></a>
+                        <a href="https://wa.me/2348065651034" class="w-14 h-14 bg-white text-black rounded-2xl flex items-center justify-center hover:bg-blue-600 hover:text-white transition transform group-hover:scale-110"><i class="fab fa-whatsapp text-2xl"></i></a>
                     </div>
                 </div>
+
                 <div class="group bg-[#121214] border border-white/5 rounded-[40px] p-8 card-glow transition-all">
-                    <div class="flex justify-between items-start mb-12"><span class="text-[10px] font-black bg-blue-600 px-3 py-1 rounded-full uppercase">Certified</span><i class="fab fa-apple text-3xl text-white/5"></i></div>
+                    <div class="flex justify-between items-start mb-12"><span class="text-[10px] font-black bg-blue-600 px-3 py-1 rounded-full uppercase tracking-widest">Certified</span><i class="fab fa-apple text-3xl text-white/5 group-hover:text-blue-500 transition"></i></div>
                     <h4 class="text-2xl font-bold mb-8">iPhone 14 Pro</h4>
                     <div class="flex justify-between items-end">
                         <p class="text-3xl font-black">₦950,000</p>
-                        <a href="https://wa.me/2348065651034" class="w-14 h-14 bg-white text-black rounded-2xl flex items-center justify-center hover:bg-blue-600 hover:text-white transition"><i class="fab fa-whatsapp text-2xl"></i></a>
+                        <a href="https://wa.me/2348065651034" class="w-14 h-14 bg-white text-black rounded-2xl flex items-center justify-center hover:bg-blue-600 hover:text-white transition transform group-hover:scale-110"><i class="fab fa-whatsapp text-2xl"></i></a>
                     </div>
                 </div>
+
                 <div class="group bg-[#121214] border border-white/5 rounded-[40px] p-8 card-glow transition-all">
-                    <div class="flex justify-between items-start mb-12"><span class="text-[10px] font-black bg-blue-600 px-3 py-1 rounded-full uppercase">Direct US</span><i class="fab fa-apple text-3xl text-white/5"></i></div>
+                    <div class="flex justify-between items-start mb-12"><span class="text-[10px] font-black bg-blue-600 px-3 py-1 rounded-full uppercase tracking-widest">Direct US</span><i class="fab fa-apple text-3xl text-white/5 group-hover:text-blue-500 transition"></i></div>
                     <h4 class="text-2xl font-bold mb-8">iPhone 13</h4>
                     <div class="flex justify-between items-end">
                         <p class="text-3xl font-black">₦450,000</p>
-                        <a href="https://wa.me/2348065651034" class="w-14 h-14 bg-white text-black rounded-2xl flex items-center justify-center hover:bg-blue-600 hover:text-white transition"><i class="fab fa-whatsapp text-2xl"></i></a>
+                        <a href="https://wa.me/2348065651034" class="w-14 h-14 bg-white text-black rounded-2xl flex items-center justify-center hover:bg-blue-600 hover:text-white transition transform group-hover:scale-110"><i class="fab fa-whatsapp text-2xl"></i></a>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <section id="request" class="py-20 px-6 bg-white/[0.01] border-y border-white/5">
-        <div class="container mx-auto max-w-5xl">
-            <div class="bg-[#121214] p-10 rounded-[40px] border border-white/5">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <h4 class="text-3xl font-bold mb-4">Retailer Partnerships</h4>
-                        <p class="text-gray-400 text-sm leading-relaxed mb-6">Are you a high-volume retailer? We source specific quantities and models directly for our partners. Use the form to request a custom quote.</p>
-                        <div class="flex items-center space-x-4 text-blue-500 font-bold text-sm">
-                            <i class="fas fa-truck-fast"></i>
-                            <span>Lagos & Abuja Dispatch Daily</span>
-                        </div>
-                    </div>
-                    <form id="stockForm" class="space-y-4">
-                        <input type="text" id="custName" placeholder="Business Name" class="w-full p-4 rounded-xl outline-none focus:border-blue-500 transition" required>
-                        <input type="text" id="iphoneModel" placeholder="Models Needed (e.g. 10x iPhone 13 Pro)" class="w-full p-4 rounded-xl outline-none focus:border-blue-500 transition" required>
-                        <button type="button" onclick="sendToWhatsApp()" class="w-full bg-blue-600 hover:bg-white hover:text-black py-4 rounded-xl font-black transition-all">
-                            Submit Request <i class="fab fa-whatsapp ml-2"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
+    <section class="py-16 px-6 bg-white/[0.02] border-t border-white/5">
+        <div class="container mx-auto text-center">
+            <h4 class="text-xl font-bold mb-4">Are you a Retailer?</h4>
+            <p class="text-gray-500 mb-8 max-w-lg mx-auto text-sm">We provide wholesale sourcing directly from US telecom operators for large orders.</p>
+            <a href="https://wa.me/2348065651034?text=Hi%20Yankee%20Direct,%20I%20am%20a%20retailer%20and%20I%20want%20to%20request%20stock%20quotes." class="inline-block border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-8 py-3 rounded-xl font-bold transition">Request Retailer Price List</a>
         </div>
     </section>
 
     <footer class="py-20 px-6 text-center">
         <h2 class="text-4xl font-black italic uppercase mb-8">Yankee <span class="text-blue-500 not-italic">Direct</span></h2>
+        <div class="flex justify-center space-x-6 mb-6 text-gray-500">
+            <a href="#" class="hover:text-white transition">Instagram</a>
+            <a href="#" class="hover:text-white transition">TikTok</a>
+        </div>
         <p class="text-[10px] text-gray-700 tracking-[0.4em] uppercase mb-4">Lagos • Abuja • US Direct • 2026</p>
-        <p class="text-xs text-gray-500 font-bold">Contact: 0806 565 1034</p>
+        <p class="text-xs text-gray-500 font-bold">WhatsApp: 0806 565 1034</p>
     </footer>
 
-    <script>
-        function sendToWhatsApp() {
-            const name = document.getElementById('custName').value;
-            const model = document.getElementById('iphoneModel').value;
-            if(!name || !model) { alert("Please fill in both fields"); return; }
-            const message = `Hi Yankee Direct, this is ${name}. I am a retailer interested in sourcing: %0A%0A📦 Request: ${model}%0A%0APlease let me know pricing and availability.`;
-            window.open(`https://wa.me/2348065651034?text=${message}`, '_blank');
-        }
-    </script>
 </body>
 </html>
