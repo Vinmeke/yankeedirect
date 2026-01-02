@@ -7,143 +7,141 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .iphone-card:hover { transform: translateY(-10px); border-color: #3b82f6; }
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .glass-nav { background: rgba(10, 10, 12, 0.8); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+        .hero-gradient { background: radial-gradient(circle at top, rgba(59, 130, 246, 0.15) 0%, transparent 70%); }
+        .card-glow:hover { box-shadow: 0 0 40px rgba(59, 130, 246, 0.15); border-color: rgba(59, 130, 246, 0.5); }
     </style>
 </head>
 <body class="bg-[#0a0a0c] text-white">
 
-    <nav class="sticky top-0 z-50 glass px-6 py-4">
+    <nav class="fixed w-full z-50 glass-nav px-6 py-5">
         <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-3xl font-black tracking-tighter text-blue-500">Yankee <span class="text-white font-light">Direct</span></h1>
-            <div class="flex items-center space-x-6">
-                <a href="#about" class="text-sm font-medium text-gray-400 hover:text-white transition">About</a>
-                <a href="https://wa.me/23480656510" class="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-full text-sm font-bold transition">WhatsApp</a>
+            <h1 class="text-3xl font-extrabold tracking-tighter italic">Yankee <span class="text-blue-500 not-italic">Direct</span></h1>
+            <div class="flex items-center space-x-8">
+                <a href="#inventory" class="text-xs font-bold tracking-widest text-gray-400 hover:text-white transition uppercase">Stock</a>
+                <a href="https://wa.me/23480656510" class="bg-white text-black px-6 py-2.5 rounded-full text-xs font-black hover:bg-blue-500 hover:text-white transition uppercase tracking-widest">Chat Sales</a>
             </div>
         </div>
     </nav>
 
-    <header class="relative pt-32 pb-20 px-6 text-center overflow-hidden">
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-600/20 blur-[120px] rounded-full"></div>
-        <div class="container mx-auto relative z-10">
-            <div class="inline-flex items-center space-x-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full mb-8">
-                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                <span class="text-xs font-bold tracking-widest uppercase">Now Shipping to Lagos & Abuja</span>
+    <header class="relative pt-48 pb-32 px-6 hero-gradient overflow-hidden">
+        <div class="container mx-auto text-center relative z-10">
+            <div class="inline-flex items-center space-x-3 bg-blue-500/10 border border-blue-500/20 px-5 py-2 rounded-full mb-10">
+                <span class="relative flex h-3 w-3"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span><span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span></span>
+                <span class="text-[10px] font-black tracking-[0.2em] uppercase text-blue-400 text-center">Dispatching from Lagos & Abuja Today</span>
             </div>
-            <h2 class="text-5xl md:text-8xl font-black mb-6 tracking-tight leading-none">Quality iPhone <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">you can trust.</span></h2>
-            <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
-                Direct US imports sourced from telecom operators. No middlemen. No scams. All payments in Naira.
+            <h2 class="text-6xl md:text-8xl font-extrabold mb-8 tracking-tighter leading-[0.9]">Quality iPhone <br><span class="text-blue-500">you can trust.</span></h2>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-12 font-light leading-relaxed">
+                Direct US imports sourced from telecom operators. No middlemen. No scams. <span class="text-white font-semibold">100% Naira Transactions.</span>
             </p>
-            <a href="#inventory" class="inline-block bg-white text-black px-12 py-5 rounded-2xl font-black text-lg hover:bg-blue-500 hover:text-white transition transform hover:scale-105 shadow-[0_0_30px_rgba(59,130,246,0.3)]">
-                Shop Current Stock
-            </a>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="#inventory" class="bg-blue-600 hover:bg-blue-700 text-white px-12 py-5 rounded-2xl font-bold text-lg transition shadow-[0_20px_50px_rgba(59,130,246,0.3)]">View Inventory</a>
+                <a href="https://wa.me/23480656510" class="bg-white/5 border border-white/10 hover:bg-white/10 text-white px-12 py-5 rounded-2xl font-bold text-lg transition">Retailer Inquiry</a>
+            </div>
         </div>
     </header>
 
-    <section id="about" class="py-20 px-6 border-y border-white/5 bg-white/[0.01]">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-            <div>
-                <h3 class="text-4xl font-bold mb-6 italic underline decoration-blue-600">The Yankee Direct Advantage</h3>
-                <p class="text-gray-400 mb-8 text-lg font-light leading-relaxed">
-                    We eliminate international transaction risks and dollar rate fluctuations. By shipping directly from US telecom auctions to our hubs in Nigeria, we offer retailers and individuals 100% authentic devices without the "Computer Village" headache.
-                </p>
-                <div class="space-y-4">
-                    <div class="flex items-start space-x-4">
-                        <div class="bg-blue-600/20 p-3 rounded-lg"><i class="fas fa-check text-blue-500"></i></div>
-                        <div><h5 class="font-bold">Zero Scam Guarantee</h5><p class="text-sm text-gray-500">Local delivery, local payment, no stress.</p></div>
-                    </div>
-                    <div class="flex items-start space-x-4">
-                        <div class="bg-blue-600/20 p-3 rounded-lg"><i class="fas fa-naira-sign text-blue-500"></i></div>
-                        <div><h5 class="font-bold">Fixed Naira Pricing</h5><p class="text-sm text-gray-500">What you see is what you pay. No hidden FX fees.</p></div>
-                    </div>
-                </div>
+    <section class="py-24 px-6 border-y border-white/5 bg-white/[0.01]">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="text-center">
+                <i class="fas fa-microchip text-blue-500 text-4xl mb-6"></i>
+                <h4 class="text-xl font-bold mb-3">Direct US Source</h4>
+                <p class="text-gray-500 text-sm leading-relaxed">Every device is sourced directly from US telecom auctions. No local swaps, no hidden repairs.</p>
             </div>
-            <div class="glass p-10 rounded-[40px] border-white/10 text-center">
-                <i class="fas fa-microchip text-7xl text-blue-600 mb-6"></i>
-                <h4 class="text-2xl font-bold mb-4">Certified Pre-Owned</h4>
-                <p class="text-gray-500 text-sm">Every device undergoes a 40-point diagnostic check before leaving the US. We only sell phones that have never been opened or repaired locally.</p>
+            <div class="text-center border-x border-white/5 px-6">
+                <i class="fas fa-shield-halved text-blue-500 text-4xl mb-6"></i>
+                <h4 class="text-xl font-bold mb-3">Zero Scam Guarantee</h4>
+                <p class="text-gray-500 text-sm leading-relaxed">Eliminating international transaction risks. Buy locally with absolute confidence and Naira payment.</p>
+            </div>
+            <div class="text-center">
+                <i class="fas fa-truck-fast text-blue-500 text-4xl mb-6"></i>
+                <h4 class="text-xl font-bold mb-3">Swift Dispatch</h4>
+                <p class="text-gray-500 text-sm leading-relaxed">Stocked in Lagos and Abuja for immediate delivery to retailers and end-users nationwide.</p>
             </div>
         </div>
     </section>
 
-    <section id="inventory" class="py-24 px-6">
+    <section id="inventory" class="py-32 px-6">
         <div class="container mx-auto">
-            <div class="flex justify-between items-end mb-16">
-                <h3 class="text-4xl font-black">Live Inventory</h3>
-                <p class="text-blue-500 font-bold border-b border-blue-500 pb-1">Updated 2026</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="iphone-card glass rounded-[32px] overflow-hidden transition duration-500">
-                    <div class="h-64 flex items-center justify-center bg-gradient-to-b from-white/[0.05] to-transparent">
-                        <i class="fab fa-apple text-7xl text-white/20"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="text-[10px] tracking-widest font-bold bg-blue-600 text-white px-3 py-1 rounded-full uppercase">Pristine</span>
-                            <span class="text-xs text-gray-500 font-bold">BH 90%+</span>
-                        </div>
-                        <h4 class="text-2xl font-bold mb-6">iPhone 15 Pro Max</h4>
-                        <div class="flex justify-between items-center">
-                            <p class="text-3xl font-black">₦1,450,000</p>
-                            <a href="https://wa.me/23480656510" class="w-12 h-12 bg-white text-black rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
-                                <i class="fas fa-shopping-cart"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <h3 class="text-4xl font-extrabold mb-20 text-center tracking-tight uppercase">Live Availability</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                 
-                <div class="iphone-card glass rounded-[32px] overflow-hidden transition duration-500">
-                    <div class="h-64 flex items-center justify-center bg-gradient-to-b from-white/[0.05] to-transparent">
-                        <i class="fab fa-apple text-7xl text-white/20"></i>
+                <div class="group relative bg-[#121214] border border-white/5 rounded-[40px] p-8 card-glow transition-all duration-500">
+                    <div class="flex justify-between items-start mb-12">
+                        <span class="text-[10px] font-black tracking-widest bg-blue-600 px-3 py-1 rounded-full uppercase">Pristine</span>
+                        <i class="fab fa-apple text-3xl text-white/10 group-hover:text-white transition duration-500"></i>
                     </div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="text-[10px] tracking-widest font-bold bg-blue-600 text-white px-3 py-1 rounded-full uppercase">Certified</span>
-                            <span class="text-xs text-gray-500 font-bold">BH 88%+</span>
+                    <div class="mb-12">
+                        <h4 class="text-2xl font-bold mb-2">iPhone 15 Pro Max</h4>
+                        <p class="text-gray-500 text-xs tracking-widest uppercase font-semibold">US Spec | 128GB - 1TB</p>
+                    </div>
+                    <div class="flex justify-between items-end">
+                        <div>
+                            <p class="text-[10px] text-gray-500 font-bold uppercase mb-1">Price From</p>
+                            <p class="text-3xl font-black">₦1,450,000</p>
                         </div>
-                        <h4 class="text-2xl font-bold mb-6">iPhone 14 Pro</h4>
-                        <div class="flex justify-between items-center">
-                            <p class="text-3xl font-black">₦950,000</p>
-                            <a href="https://wa.me/23480656510" class="w-12 h-12 bg-white text-black rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
-                                <i class="fas fa-shopping-cart"></i>
-                            </a>
-                        </div>
+                        <a href="https://wa.me/23480656510" class="bg-white text-black w-14 h-14 rounded-2xl flex items-center justify-center hover:bg-blue-500 hover:text-white transition-all transform group-hover:rotate-12">
+                            <i class="fas fa-shopping-cart text-xl"></i>
+                        </a>
                     </div>
                 </div>
 
-                <div class="iphone-card glass rounded-[32px] overflow-hidden transition duration-500">
-                    <div class="h-64 flex items-center justify-center bg-gradient-to-b from-white/[0.05] to-transparent">
-                        <i class="fab fa-apple text-7xl text-white/20"></i>
+                <div class="group relative bg-[#121214] border border-white/5 rounded-[40px] p-8 card-glow transition-all duration-500">
+                    <div class="flex justify-between items-start mb-12">
+                        <span class="text-[10px] font-black tracking-widest bg-blue-600 px-3 py-1 rounded-full uppercase">Certified</span>
+                        <i class="fab fa-apple text-3xl text-white/10 group-hover:text-white transition duration-500"></i>
                     </div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="text-[10px] tracking-widest font-bold bg-blue-600 text-white px-3 py-1 rounded-full uppercase">Direct US</span>
-                            <span class="text-xs text-gray-500 font-bold">Stock: High</span>
+                    <div class="mb-12">
+                        <h4 class="text-2xl font-bold mb-2">iPhone 14 Pro</h4>
+                        <p class="text-gray-500 text-xs tracking-widest uppercase font-semibold">US Spec | Grade A++</p>
+                    </div>
+                    <div class="flex justify-between items-end">
+                        <div>
+                            <p class="text-[10px] text-gray-500 font-bold uppercase mb-1">Price From</p>
+                            <p class="text-3xl font-black">₦950,000</p>
                         </div>
-                        <h4 class="text-2xl font-bold mb-6">iPhone 13</h4>
-                        <div class="flex justify-between items-center">
-                            <p class="text-3xl font-black">₦450,000</p>
-                            <a href="https://wa.me/23480656510" class="w-12 h-12 bg-white text-black rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
-                                <i class="fas fa-shopping-cart"></i>
-                            </a>
-                        </div>
+                        <a href="https://wa.me/23480656510" class="bg-white text-black w-14 h-14 rounded-2xl flex items-center justify-center hover:bg-blue-500 hover:text-white transition-all transform group-hover:rotate-12">
+                            <i class="fas fa-shopping-cart text-xl"></i>
+                        </a>
                     </div>
                 </div>
+
+                <div class="group relative bg-[#121214] border border-white/5 rounded-[40px] p-8 card-glow transition-all duration-500">
+                    <div class="flex justify-between items-start mb-12">
+                        <span class="text-[10px] font-black tracking-widest bg-blue-600 px-3 py-1 rounded-full uppercase">Direct US</span>
+                        <i class="fab fa-apple text-3xl text-white/10 group-hover:text-white transition duration-500"></i>
+                    </div>
+                    <div class="mb-12">
+                        <h4 class="text-2xl font-bold mb-2">iPhone 13</h4>
+                        <p class="text-gray-500 text-xs tracking-widest uppercase font-semibold">US Spec | Best Seller</p>
+                    </div>
+                    <div class="flex justify-between items-end">
+                        <div>
+                            <p class="text-[10px] text-gray-500 font-bold uppercase mb-1">Price From</p>
+                            <p class="text-3xl font-black">₦450,000</p>
+                        </div>
+                        <a href="https://wa.me/23480656510" class="bg-white text-black w-14 h-14 rounded-2xl flex items-center justify-center hover:bg-blue-500 hover:text-white transition-all transform group-hover:rotate-12">
+                            <i class="fas fa-shopping-cart text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <footer class="py-20 px-6 border-t border-white/5 text-center">
-        <h2 class="text-3xl font-black text-blue-500 mb-6">Yankee Direct</h2>
-        <div class="flex justify-center space-x-8 mb-10 text-gray-500">
-            <a href="#" class="hover:text-white transition">Instagram</a>
-            <a href="#" class="hover:text-white transition">TikTok</a>
-            <a href="https://wa.me/23480656510" class="hover:text-white transition font-bold">0806 5651 0XX</a>
+    <footer class="py-24 px-6 border-t border-white/5">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-black italic mb-10">Yankee <span class="text-blue-500 not-italic">Direct</span></h2>
+            <div class="flex flex-wrap justify-center gap-10 text-gray-500 text-sm font-bold tracking-widest uppercase mb-12">
+                <a href="#" class="hover:text-white transition">Instagram</a>
+                <a href="#" class="hover:text-white transition">TikTok</a>
+                <a href="https://wa.me/23480656510" class="hover:text-white transition">WhatsApp</a>
+            </div>
+            <p class="text-[10px] text-gray-600 tracking-[0.3em] uppercase underline decoration-blue-600 underline-offset-8">Direct US Imports • Lagos & Abuja • 2026</p>
         </div>
-        <p class="text-xs text-gray-600 uppercase tracking-widest">Lagos Office | Abuja Dispatch | 2026</p>
     </footer>
 
 </body>
