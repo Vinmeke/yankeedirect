@@ -20,10 +20,17 @@
             backdrop-filter: saturate(180%) blur(25px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
-        .hero-title {
-            font-size: clamp(3.5rem, 10vw, 8.5rem);
-            line-height: 1.0;
-            letter-spacing: -0.05em;
+        /* Massive Brand Banner Styles */
+        .brand-banner {
+            font-size: clamp(4rem, 15vw, 12rem);
+            line-height: 0.9;
+            letter-spacing: -0.06em;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+        .hero-subtext {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            letter-spacing: -0.02em;
         }
         .card-apple {
             background: #161617;
@@ -40,43 +47,54 @@
             transition: transform 0.6s cubic-bezier(0.2, 1, 0.3, 1);
             filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5));
         }
-        .card-apple:hover .product-img {
-            transform: scale(1.1) translateY(-10px);
-        }
         .tagline-gradient {
-            background: linear-gradient(180deg, #fff 30%, #a1a1a6 100%);
+            background: linear-gradient(180deg, #fff 40%, #515154 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+        .badge-status {
+            background: rgba(255, 165, 0, 0.1);
+            border: 1px solid orange;
+            color: orange;
+            padding: 4px 12px;
+            border-radius: 100px;
+            font-size: 10px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-    <nav class="fixed w-full z-50 apple-nav px-8 py-5">
-        <div class="container mx-auto flex justify-between items-center max-w-7xl">
-            <h1 class="text-2xl font-bold tracking-tight text-white italic">YANKEE <span class="text-blue-500 not-italic">DIRECT</span></h1>
-            <a href="https://wa.me/2348065651034" class="bg-[#0071e3] text-white px-8 py-2.5 rounded-full text-xs font-bold transition hover:bg-[#0077ed]">Chat Sales</a>
+    <nav class="fixed w-full z-50 apple-nav px-8 py-4">
+        <div class="container mx-auto flex justify-end items-center max-w-7xl">
+            <a href="https://wa.me/2348065651034" class="bg-[#0071e3] text-white px-6 py-2 rounded-full text-xs font-bold transition hover:bg-[#0077ed]">Contact Sales</a>
         </div>
     </nav>
 
-    <section class="relative pt-64 pb-40 px-6 text-center bg-black">
-        <div class="container mx-auto max-w-5xl reveal">
-            <p class="text-base font-bold text-orange-500 mb-8 uppercase tracking-[0.3em]">Sourced Directly from US network providers</p>
-            <h2 class="hero-title font-bold mb-10 tagline-gradient">Quality iPhone.<br>You can trust.</h2>
-            <p class="text-xl md:text-2xl text-gray-400 mb-12 font-medium italic">Unlocked. Certified. Premium.</p>
+    <header class="relative pt-48 pb-20 px-6 text-center bg-black">
+        <div class="container mx-auto max-w-7xl reveal">
+            <p class="text-sm md:text-base font-bold text-orange-500 mb-6 uppercase tracking-[0.4em]">Sourced Directly from US network providers</p>
+            
+            <h1 class="brand-banner tagline-gradient italic mb-8">
+                YANKEE<br><span class="text-blue-600 not-italic">DIRECT</span>
+            </h1>
+
+            <h2 class="hero-subtext font-semibold text-gray-300 mb-12">Quality iPhone. You can trust.</h2>
+            <p class="text-lg text-gray-500 font-medium italic">Unlocked. Certified. Arriving Soon.</p>
         </div>
-    </section>
+    </header>
 
     <section id="inventory" class="py-32 px-6 bg-[#f5f5f7]">
         <div class="container mx-auto max-w-7xl">
             <div class="text-center mb-24 reveal">
-                <h3 class="text-5xl md:text-7xl font-bold tracking-tight text-black mb-4">Available Now.</h3>
-                <p class="text-xl text-gray-500 font-medium uppercase italic">128GB Collection</p>
+                <h3 class="text-5xl md:text-7xl font-bold tracking-tight text-black mb-4">Incoming Stock.</h3>
+                <p class="text-xl text-gray-500 font-medium uppercase italic">US 128GB Series • Abuja Hub</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-32">
                 <div class="card-apple p-12 flex flex-col justify-between h-[650px] text-white reveal">
                     <div class="text-center">
+                        <div class="mb-4"><span class="badge-status">In Transit</span></div>
                         <div class="h-56 flex items-center justify-center mb-8">
                             <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-plus-midnight-select-202209?wid=940&hei=1112&fmt=png-alpha&.v=1661260840911" class="product-img max-h-full object-contain" alt="iPhone 14 Plus">
                         </div>
@@ -86,12 +104,13 @@
                     </div>
                     <div class="text-center">
                         <p class="text-4xl font-bold mb-10">₦525,000</p>
-                        <a href="https://wa.me/2348065651034?text=I%20want%20to%20order%20the%20iPhone%2014%20Plus%20(₦525,000)" class="bg-[#0071e3] w-full py-5 rounded-full text-base font-bold inline-block">Order Now</a>
+                        <a href="https://wa.me/2348065651034?text=I%20want%20to%20pre-order%20the%20iPhone%2014%20Plus" class="bg-[#0071e3] w-full py-5 rounded-full text-base font-bold inline-block">Secure Yours</a>
                     </div>
                 </div>
 
                 <div class="card-apple p-12 flex flex-col justify-between h-[650px] text-white reveal">
                     <div class="text-center">
+                        <div class="mb-4"><span class="badge-status">In Transit</span></div>
                         <div class="h-56 flex items-center justify-center mb-8">
                             <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-finish-unselect-gallery-2-202209?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1661260840911" class="product-img max-h-full object-contain" alt="iPhone 14">
                         </div>
@@ -101,12 +120,13 @@
                     </div>
                     <div class="text-center">
                         <p class="text-4xl font-bold mb-10">₦475,000</p>
-                        <a href="https://wa.me/2348065651034?text=I%20want%20to%20order%20the%20iPhone%2014%20Regular%20(₦475,000)" class="bg-[#0071e3] w-full py-5 rounded-full text-base font-bold inline-block">Order Now</a>
+                        <a href="https://wa.me/2348065651034?text=I%20want%20to%20pre-order%20the%20iPhone%2014" class="bg-[#0071e3] w-full py-5 rounded-full text-base font-bold inline-block">Secure Yours</a>
                     </div>
                 </div>
 
                 <div class="card-apple p-12 flex flex-col justify-between h-[650px] text-white reveal">
                     <div class="text-center">
+                        <div class="mb-4"><span class="badge-status">In Transit</span></div>
                         <div class="h-56 flex items-center justify-center mb-8">
                             <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-max-silver-select?wid=940&hei=1112&fmt=png-alpha&.v=1631652956000" class="product-img max-h-full object-contain" alt="iPhone 13 Pro">
                         </div>
@@ -116,29 +136,29 @@
                     </div>
                     <div class="text-center">
                         <p class="text-4xl font-bold mb-10">₦550,000</p>
-                        <a href="https://wa.me/2348065651034?text=I%20want%20to%20order%20the%20iPhone%2013%20Pro%20(₦550,000)" class="bg-[#0071e3] w-full py-5 rounded-full text-base font-bold inline-block">Order Now</a>
+                        <a href="https://wa.me/2348065651034?text=I%20want%20to%20pre-order%20the%20iPhone%2013%20Pro" class="bg-[#0071e3] w-full py-5 rounded-full text-base font-bold inline-block">Secure Yours</a>
                     </div>
                 </div>
             </div>
 
-            <div class="bg-white rounded-[32px] p-8 md:p-16 shadow-sm reveal">
-                <h4 class="text-3xl font-bold text-black mb-12">Inventory Price List</h4>
+            <div class="bg-white rounded-[40px] p-8 md:p-20 shadow-sm reveal">
+                <h4 class="text-4xl font-bold text-black mb-12">Arrival Price List</h4>
                 <div class="overflow-x-auto">
                     <table class="w-full text-left">
                         <thead>
                             <tr class="text-gray-400 uppercase text-xs tracking-widest border-b">
-                                <th class="pb-6">Model / Specs</th>
-                                <th class="pb-6">Color Available</th>
-                                <th class="pb-6 text-right">Target Retail (₦)</th>
+                                <th class="pb-6">Model</th>
+                                <th class="pb-6">Color</th>
+                                <th class="pb-6 text-right">Retail (₦)</th>
                             </tr>
                         </thead>
-                        <tbody class="text-black font-medium">
-                            <tr class="border-b"><td class="py-6">iPhone 14 Plus (128GB)</td><td>Black</td><td class="text-right font-bold">525,000</td></tr>
-                            <tr class="border-b"><td class="py-6">iPhone 14 (128GB)</td><td>Purple / Blue</td><td class="text-right font-bold">480,000 - 485,000</td></tr>
-                            <tr class="border-b"><td class="py-6">iPhone 14 (128GB)</td><td>Black / Starlight</td><td class="text-right font-bold">475,000</td></tr>
-                            <tr class="border-b"><td class="py-6">iPhone 13 Pro (128GB)</td><td>Gold / Graphite / Silver</td><td class="text-right font-bold">550,000 - 560,000</td></tr>
-                            <tr class="border-b"><td class="py-6">iPhone 13 (128GB)</td><td>Pink</td><td class="text-right font-bold">340,000</td></tr>
-                            <tr class="border-b"><td class="py-6">iPhone 13 (128GB)</td><td>Black</td><td class="text-right font-bold">335,000</td></tr>
+                        <tbody class="text-black font-medium text-lg">
+                            <tr class="border-b"><td class="py-8">iPhone 14 Plus (128GB)</td><td>Black</td><td class="text-right font-bold text-2xl">525,000</td></tr>
+                            <tr class="border-b"><td class="py-8">iPhone 14 (128GB)</td><td>Purple / Blue</td><td class="text-right font-bold text-2xl">480,000</td></tr>
+                            <tr class="border-b"><td class="py-8">iPhone 14 (128GB)</td><td>Black / Starlight</td><td class="text-right font-bold text-2xl">475,000</td></tr>
+                            <tr class="border-b"><td class="py-8">iPhone 13 Pro (128GB)</td><td>Gold / Graphite / Silver</td><td class="text-right font-bold text-2xl">550,000</td></tr>
+                            <tr class="border-b"><td class="py-8">iPhone 13 (128GB)</td><td>Pink</td><td class="text-right font-bold text-2xl">340,000</td></tr>
+                            <tr class="border-b"><td class="py-8">iPhone 13 (128GB)</td><td>Black</td><td class="text-right font-bold text-2xl">335,000</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -146,12 +166,12 @@
         </div>
     </section>
 
-    <footer class="py-24 px-8 bg-black text-gray-500 text-sm text-center">
-        <p>© 2026 Yankee Direct. All devices are carrier unlocked and US sourced.</p>
+    <footer class="py-20 px-8 bg-black text-gray-600 text-sm text-center">
+        <p>© 2026 Yankee Direct • Premium US Sourced Hardware</p>
     </footer>
 
     <script>
-        ScrollReveal().reveal('.reveal', { distance: '50px', duration: 1000, delay: 200, origin: 'bottom', interval: 100 });
+        ScrollReveal().reveal('.reveal', { distance: '40px', duration: 1000, delay: 200, origin: 'bottom', interval: 150 });
     </script>
 </body>
 </html>
