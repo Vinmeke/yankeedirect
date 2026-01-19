@@ -21,11 +21,12 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
         .brand-banner {
-            font-size: clamp(3.5rem, 12vw, 10rem);
-            line-height: 0.85;
-            letter-spacing: -0.06em;
+            font-size: clamp(2.5rem, 8vw, 7rem); /* Adjusted for single line fit */
+            line-height: 1.1;
+            letter-spacing: -0.04em;
             font-weight: 800;
             text-transform: uppercase;
+            white-space: nowrap;
         }
         .card-apple {
             background: #161617;
@@ -66,11 +67,15 @@
         </div>
     </nav>
 
-    <header class="relative pt-48 pb-20 px-6 text-center bg-black">
+    <header class="relative pt-56 pb-24 px-6 text-center bg-black">
         <div class="container mx-auto max-w-7xl reveal">
             <p class="text-sm md:text-base font-bold text-orange-500 mb-6 uppercase tracking-[0.4em]">Sourced Directly from US network providers</p>
-            <h1 class="brand-banner tagline-gradient italic mb-8">YANKEE<br><span class="text-blue-600 not-italic">DIRECT</span></h1>
-            <h2 class="text-2xl md:text-4xl font-semibold text-gray-300">Quality iPhones you can trust</h2>
+            
+            <h1 class="brand-banner tagline-gradient italic mb-6">
+                YANKEE <span class="text-blue-600 not-italic">DIRECT</span>
+            </h1>
+
+            <h2 class="text-xl md:text-3xl font-semibold text-gray-300">Quality iPhones you can trust</h2>
         </div>
     </header>
 
@@ -140,13 +145,13 @@
             </div>
 
             <div class="bg-white rounded-[40px] p-8 md:p-16 shadow-sm reveal">
-                <h4 class="text-3xl font-bold text-black mb-10">All Available Models</h4>
+                <h4 class="text-3xl font-bold text-black mb-10">Available Inventory</h4>
                 <div class="overflow-x-auto">
                     <table class="w-full text-left">
                         <thead>
                             <tr class="text-gray-400 uppercase text-xs border-b">
                                 <th class="pb-6">Model</th>
-                                <th class="pb-6">Color Options</th>
+                                <th class="pb-6">Color</th>
                                 <th class="pb-6 text-right">Price (₦)</th>
                             </tr>
                         </thead>
